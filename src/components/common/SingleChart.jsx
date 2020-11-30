@@ -12,6 +12,8 @@ const SingleChart = ({ data, labels, title, backgroundColor }) => {
             {
               data,
               backgroundColor,
+              pointRadius: 7,
+              pointHitRadius: 15
             },
           ],
         }}
