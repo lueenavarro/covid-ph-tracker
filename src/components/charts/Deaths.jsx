@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-
-import { CovidDataContext } from "contexts/CovidData";
 import SingleChart from "../common/SingleChart";
+import { CovidDataContext } from "contexts/CovidData";
 
 const Deaths = () => {
   const { covidData } = useContext(CovidDataContext);

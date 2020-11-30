@@ -1,6 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-
-import httpService from "../services/httpService";
+import httpService from "services/httpService";
 
 const dataSource =
   "https://og6gue4ryf.execute-api.ap-southeast-2.amazonaws.com/dev/covid-tracker/ph/regions";

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import { CovidDataContext } from "contexts/CovidData";
 
 const Summary = () => {
