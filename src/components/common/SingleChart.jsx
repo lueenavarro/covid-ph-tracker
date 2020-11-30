@@ -4,25 +4,26 @@ import React from "react";
 const SingleChart = ({ data, labels, title, backgroundColor }) => {
   return (
     <div>
-    <Line
-      height={350}
-      data={{
-        labels,
-        datasets: [
-          {
-            data,
-            backgroundColor,
+      <Line
+        height={350}
+        data={{
+          labels,
+          datasets: [
+            {
+              data,
+              backgroundColor,
+            },
+          ],
+        }}
+        options={{
+          title: { display: true, text: title, fontSize: 25 },
+          maintainAspectRatio: false,
+          events: ["mousemove", "touchstart", "touchmove", "click"],
+          legend: {
+            display: false,
           },
-        ],
-      }}
-      options={{
-        title: { display: true, text: title, fontSize: 25 },
-        maintainAspectRatio: false,
-        legend: {
-          display: false,
-        },
-      }}
-    />
+        }}
+      />
     </div>
   );
 };
