@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { CovidDataContext } from "./../contexts/CovidData";
+import { CovidDataContext } from "contexts/CovidData";
 
 const Summary = () => {
   const { lastUpdated } = useContext(CovidDataContext);

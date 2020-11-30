@@ -1,7 +1,7 @@
-import { CovidDataContext } from "./../contexts/CovidData";
-import React from "react";
-import SingleChart from "./common/SingleChart";
-import { useContext } from "react";
+import React, { useContext } from "react";
+
+import { CovidDataContext } from "contexts/CovidData";
+import SingleChart from "../common/SingleChart";
 
 const Active = () => {
   const { covidData } = useContext(CovidDataContext);
